@@ -24,7 +24,22 @@ module.exports = {
 
   locales: {
     '/': {
-      lang: 'ja_JP',
+      lang: 'ja',
     },
+  },
+
+  plugins: [
+    [
+      '@vuepress/last-updated',
+      {
+        dateOptions:{
+          hours12: false,
+        },
+      },
+    ],
+  ],
+
+  themeConfig: {
+    lastUpdated: 'Last Updated',
   },
 }
