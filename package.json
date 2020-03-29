@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "dev": "vuepress dev assets --cache .cache",
-    "build": "vuepress build assets --cache .cache"
+    "build": "vuepress build assets"
   },
   "devDependencies": {
     "vuepress": "^1.4.0"
