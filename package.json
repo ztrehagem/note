@@ -4,7 +4,8 @@
   "description": "note.ztrehagem.dev",
   "private": true,
   "scripts": {
-    "dev": "vuepress dev assets --cache .cache",
+    "dev": "vuepress dev assets",
+    "dev:cache": "vuepress dev assets --cache .cache",
     "build": "vuepress build assets"
   },
   "devDependencies": {

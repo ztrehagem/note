@@ -1,5 +1,5 @@
 const title = 'note.ztrehagem.dev'
-const description = 'Just notes.'
+const description = 'ただのメモ。'
 const publicPath = 'https://note.ztrehagem.dev/'
 
 module.exports = {
@@ -40,6 +40,10 @@ module.exports = {
   ],
 
   themeConfig: {
+    nav: [
+      { text: 'ztrehagem.dev', link: 'https://ztrehagem.dev/' }
+    ],
+    sidebar: 'auto',
     lastUpdated: 'Last Updated',
   },
 }
