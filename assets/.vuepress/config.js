@@ -37,11 +37,17 @@ module.exports = {
         },
       },
     ],
+    [
+      '@vuepress/google-analytics',
+      {
+        'ga': 'UA-129758740-2',
+      },
+    ],
   ],
 
   themeConfig: {
     nav: [
-      { text: 'ztrehagem.dev', link: 'https://ztrehagem.dev/' }
+      { text: 'ztrehagem.dev', link: 'https://ztrehagem.dev/' },
     ],
     sidebar: 'auto',
     lastUpdated: 'Last Updated',

@@ -8,7 +8,8 @@
     "dev:cache": "vuepress dev assets --cache .cache",
     "build": "vuepress build assets"
   },
-  "devDependencies": {
+  "dependencies": {
+    "@vuepress/plugin-google-analytics": "^1.4.0",
     "vuepress": "^1.4.0"
   }
 }
