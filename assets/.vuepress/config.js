@@ -1,3 +1,5 @@
+const path = require('path')
+
 const title = 'note.ztrehagem.dev'
 const description = 'ただのメモ。'
 const publicPath = 'https://note.ztrehagem.dev/'
@@ -28,7 +30,34 @@ module.exports = {
     },
   },
 
+  markdown: {
+    lineNumbers: true,
+  },
+
   plugins: [
+    [
+      '@vuepress/blog',
+      {
+        directories: [
+          {
+            id: 'post',
+            dirname: '_posts',
+            path: '/',
+            itemPermalink: '/posts/:slug',
+          },
+        ],
+        frontmatters: [
+          {
+            id: "tag",
+            keys: ['tag', 'tags'],
+            path: '/tags/',
+            layout: 'Tag',
+            frontmatter: { title: 'Tag' },
+            itemlayout: 'Tag',
+          },
+        ],
+      },
+    ],
     [
       '@vuepress/last-updated',
       {
@@ -45,11 +74,11 @@ module.exports = {
     ],
   ],
 
-  themeConfig: {
-    nav: [
-      { text: 'ztrehagem.dev', link: 'https://ztrehagem.dev/' },
-    ],
-    sidebar: 'auto',
-    lastUpdated: 'Last Updated',
+  configureWebpack: {
+    resolve: {
+      alias: {
+        '@': path.resolve('assets/.vuepress'),
+      },
+    },
   },
 }
