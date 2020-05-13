@@ -2,7 +2,7 @@
   <div class="post-list">
     <ul>
       <li v-for="post in $page.$posts" :key="post.uri">
-        <a :href="post.uri">{{ post.title }}</a>
+        <router-link :to="post.uri">{{ post.title }}</router-link>
         <time :datetime="post.date | dateISO">{{ post.date | date }}</time>
       </li>
     </ul>
