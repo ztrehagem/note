@@ -30,6 +30,9 @@ module.exports = {
 
   plugins: [
     [
+      require('./plugins/blog'),
+    ],
+    [
       '@vuepress/last-updated',
       {
         dateOptions:{
