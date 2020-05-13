@@ -11,6 +11,7 @@
   "dependencies": {
     "@vuepress/plugin-google-analytics": "^1.4.0",
     "globby": "^11.0.0",
+    "markdown-it-footnote": "^3.0.2",
     "vuepress": "^1.4.0"
   }
 }
