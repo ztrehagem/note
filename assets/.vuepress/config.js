@@ -60,5 +60,6 @@ module.exports = {
     ],
     sidebar: 'auto',
     lastUpdated: 'Last Updated',
+    smoothScroll: true,
   },
 }
